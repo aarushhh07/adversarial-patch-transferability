@@ -33,7 +33,7 @@ SS model weights.
 
 ## Demos
 1. Attack demonstration
-![Image in a markdown cell](https://github.com/p-shekhar/adversarial-patch-transferability/blob/main/Experiments/figure1.pdf?raw=true)
+![Image in a markdown cell](https://drive.google.com/uc?id=1XJ3GWqNdiAuaBR2gzy3FPR-G_jYZF0jk)
 
 2. MIoU Decay during attack patch training
 <img src="Experiments/figure2.pdf" width="500">
