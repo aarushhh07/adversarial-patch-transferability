@@ -1,0 +1,84 @@
+### 0. Experiment
+experiment:
+  name: "Experiments"
+  log_patch_address: "/content/drive/MyDrive/Colab Notebooks/1_Papers/3_Attack_generation/Experiments/"
+  device: "cuda"
+
+### 1.Model
+model:
+  name: 'pidnet_l'
+
+### 2. Data
+dataset:
+  name: "cityscapes"
+  root: "/content/drive/MyDrive/Data/Self_driving/SemanticSeg/Cityscapes/"
+  train: "train.txt"
+  test: "test.txt"
+  val: "val.txt"
+  trainval: "trainval.txt"
+  num_classes: 19
+
+### 3. Patch
+patch:
+  size: 200
+  #loc: "corner"
+  #loc: "random"
+  loc: "center"
+
+
+### 3.Optimizer
+optimizer:
+  optimizer: "sgd"
+  init_lr: 0.005
+  momentum: 0.9
+  weight_decay: 0.0005
+  nesterov: False
+  exponentiallr: True
+  exponentiallr_gamma: 0.995
+
+## 4. Loss
+loss:
+  use_ohem: True
+  ohemthres: 0.9
+  ohemkeep: 131072
+  balance_weights: [0.4, 1.0]
+  sb_weights: 1.0
+
+
+### 5.Training 
+train:
+  width: 1024
+  height: 1024
+  base_size: 2048
+  flip: True
+  shuffle: True
+  ignore_label: 255
+  num_workers: 2
+  pin_memory: True
+  drop_last: False
+  batch_size: 1     # adjust according to gpu resources
+  multi_scale: True
+  scale_factor: 16
+  power: 2.5
+  log_per_iters: 1
+  start_epoch: 0
+  end_epoch: 30
+  # finetune: False
+  # finetune_add: '/content/drive/MyDrive/Colab Notebooks/1_Papers/2_RobustRealtimeSS/1_Pretraining_cityscape/1_PIDNet/experiments/pidnet_s_crop1024x1024_ExponentialLR0995_batch10_basesize2048_randscale0_5to2/checkpoints/2025-01-02 08:36:14 EST-0500_141_0.648.pth.tar'
+
+
+### 6. Test
+test:
+  width: 2048
+  height: 1024
+  base_size: 1024
+  batch_size: 1
+  output_index_pidnet: 1 # at index 1, we have I branch output
+  output_index_icnet: 0
+  output_index_bisenet: 0
+  num_workers: 2
+  pin_memory: True
+  drop_last: False
+  multi_scale: False
+  flip_test: False
+  
