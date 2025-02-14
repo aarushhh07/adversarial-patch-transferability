@@ -31,13 +31,6 @@ sarial patch attack that is more realistic in a real-time
 setting, since the attacker does not need access to the
 SS model weights.
 
-## Demos
-1. Attack demonstration
-![Image in a markdown cell](https://drive.google.com/uc?id=1XJ3GWqNdiAuaBR2gzy3FPR-G_jYZF0jk)
-
-2. MIoU Decay during attack patch training
-<img src="Experiments/figure2.pdf" width="500">
-
 ## Using the code
 1. Place the pretrained models in the folder: pretrained_models
 2. Edit the config.yaml in the configs folder to add root address of you dataset along with text file names at this address containing the directory address of each of the image and corresponding mask. Each row of these files will have the address of image and mask files separated by a space.
