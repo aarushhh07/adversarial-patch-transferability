@@ -33,7 +33,8 @@ SS model weights.
 
 ## Demos
 1. Attack demonstration
-<img src="Experiments/figure1.pdf" width="500">
+<img src="Experiments/figure1.pdf?raw=True" width="500">
+![Image in a markdown cell](https://drive.google.com/uc?id=1nSFO9qVkoHaPSbxVpv0I0U85b_5Cq3m-)
 
 2. MIoU Decay during attack patch training
 <img src="Experiments/figure2.pdf" width="500">
