@@ -8,7 +8,7 @@ thus making it more realistic for a Real-time SS model
 in autonomous driving scenarios.
 2) **Adaptive adversarial training loss**: For learning the
 patch itself, we proposed an adaptive loss function that
-simplifies the one introduced in . In particular, we
+simplifies the one introduced before. In particular, we
 reduce the number of hyper-parameters in the loss metric
 to make the attack more robust.
 3) **Comprehensive Transferability Study**: We analyze how
