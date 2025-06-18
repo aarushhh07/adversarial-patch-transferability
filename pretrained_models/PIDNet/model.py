@@ -1,4 +1,3 @@
-
 # ------------------------------------------------------------------------------
 # Oiginally Written by Jiacong Xu (jiacong.xu@tamu.edu)
 # ------------------------------------------------------------------------------
@@ -9,8 +8,8 @@ import time
 import sys
 #from pathlib import Path
 #sys.path.append(Path().absolute())
-sys.path.append('/content/drive/MyDrive/Colab Notebooks/1_Papers/2_RobustRealtimeSS/2_CarlaGear/models/PIDNet')
-from model_util import BasicBlock, Bottleneck, segmenthead, DAPPM, PAPPM, PagFM, Bag, Light_Bag
+#sys.path.append('/content/drive/MyDrive/Colab Notebooks/1_Papers/2_RobustRealtimeSS/2_CarlaGear/models/PIDNet')
+from .model_util import BasicBlock, Bottleneck, segmenthead, DAPPM, PAPPM, PagFM, Bag, Light_Bag
 import logging
 
 
@@ -186,16 +185,16 @@ class PIDNet(nn.Module):
             return x_
 
 def get_seg_model(cfg, imgnet_pretrained):
-
-    if 's' in cfg.MODEL.NAME:
-        model = PIDNet(m=2, n=3, num_classes=cfg.DATASET.NUM_CLASSES, planes=32, ppm_planes=96, head_planes=128, augment=True)
-    elif 'm' in cfg.MODEL.NAME:
-        model = PIDNet(m=2, n=3, num_classes=cfg.DATASET.NUM_CLASSES, planes=64, ppm_planes=96, head_planes=128, augment=True)
+    # Use the new config structure: cfg.model.name and cfg.model.pretrained
+    if 's' in cfg.model.name:
+        model = PIDNet(m=2, n=3, num_classes=cfg.dataset.num_classes, planes=32, ppm_planes=96, head_planes=128, augment=True)
+    elif 'm' in cfg.model.name:
+        model = PIDNet(m=2, n=3, num_classes=cfg.dataset.num_classes, planes=64, ppm_planes=96, head_planes=128, augment=True)
     else:
-        model = PIDNet(m=3, n=4, num_classes=cfg.DATASET.NUM_CLASSES, planes=64, ppm_planes=112, head_planes=256, augment=True)
+        model = PIDNet(m=3, n=4, num_classes=cfg.dataset.num_classes, planes=64, ppm_planes=112, head_planes=256, augment=True)
 
     if imgnet_pretrained:
-        pretrained_state = torch.load(cfg.MODEL.PRETRAINED, map_location='cpu')['state_dict']
+        pretrained_state = torch.load(cfg.model.pretrained, map_location='cpu')['state_dict']
         model_dict = model.state_dict()
         pretrained_state = {k: v for k, v in pretrained_state.items() if (k in model_dict and v.shape == model_dict[k].shape)}
         model_dict.update(pretrained_state)
@@ -205,7 +204,7 @@ def get_seg_model(cfg, imgnet_pretrained):
         logging.info('Over!!!')
         model.load_state_dict(model_dict, strict = False)
     else:
-        pretrained_dict = torch.load(cfg.MODEL.PRETRAINED, map_location='cpu')
+        pretrained_dict = torch.load(cfg.model.pretrained, map_location='cpu')
         if 'state_dict' in pretrained_dict:
             pretrained_dict = pretrained_dict['state_dict']
         model_dict = model.state_dict()

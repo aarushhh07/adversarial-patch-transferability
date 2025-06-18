@@ -1,12 +1,12 @@
 import sys
-sys.path.append("/content/drive/MyDrive/Colab Notebooks/1_Papers/3_Attack_generation")
+sys.path.append(r"c:\Users\aarus\everything_dsg\adversarial-patch-transferability")
 from dataset.cityscapes import Cityscapes
 
 from pretrained_models.models import Models
 
-from pretrained_models.ICNet.icnet import ICNet
-from pretrained_models.BisNetV1.model import BiSeNetV1
-from pretrained_models.BisNetV2.model import BiSeNetV2
+# from pretrained_models.ICNet.icnet import ICNet
+# from pretrained_models.BisNetV1.model import BiSeNetV1
+# from pretrained_models.BisNetV2.model import BiSeNetV2
 from pretrained_models.PIDNet.model import PIDNet, get_pred_model
 
 from metrics.performance import SegmentationMetric
@@ -123,6 +123,8 @@ class PatchTrainer():
       total_loss = 0
       samplecnt = 0
       for i_iter, batch in enumerate(self.train_dataloader, 0):
+          if i_iter * self.batch_train >= 1000:
+            break
           self.current_iteration += 1
           samplecnt += batch[0].shape[0]
           image, true_label,_, _, _ = batch

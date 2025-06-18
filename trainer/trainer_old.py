@@ -1,6 +1,6 @@
 import torch
 import sys
-sys.path.append('/content/drive/MyDrive/Colab Notebooks/1_Papers/2_RobustRealtimeSS/1_Pretraining_cityscape/1_PIDNet')
+sys.path.append(r"c:\Users\aarus\everything_dsg\adversarial-patch-transferability")
 from dataset.cityscapes import Cityscapes
 from model.model import get_seg_model
 from metrics.loss import Pidnet_loss

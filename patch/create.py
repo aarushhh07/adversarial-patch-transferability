@@ -20,6 +20,7 @@ class Patch:
         patched_image = image.clone()
         patched_label = label.clone()
         _,c, h, w = image.shape
+        self.fixed_location = None
         location = self.config.patch.loc
 
         # Get patch starting coordinates
@@ -32,6 +33,14 @@ class Patch:
         elif location == "corner":
             x = 0
             y = 0
+        elif location == "random_initialization":
+            if self.fixed_location is None:
+                x = random.randint(0, w - self.patch_size)
+                y = random.randint(0, h - self.patch_size)
+                self.fixed_location = (x, y)
+            else:
+                x, y = self.fixed_location
+
         elif isinstance(location, tuple):
             x, y = location
         else:

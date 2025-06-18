@@ -1,17 +1,18 @@
 ### 0. Experiment
 experiment:
   name: "Experiments"
-  log_patch_address: "/content/drive/MyDrive/Colab Notebooks/1_Papers/3_Attack_generation/Experiments/"
+  log_patch_address: 'C:/Users/aarus/everything_dsg/adversarial-patch-transferability/Experiments/'
   device: "cuda"
 
 ### 1.Model
 model:
-  name: 'pidnet_l'
+  name: 'pidnet_s'
+  pretrained: 'pretrained_models/PIDNet/PIDNet_S_Cityscapes_test.pt'
 
 ### 2. Data
 dataset:
   name: "cityscapes"
-  root: "/content/drive/MyDrive/Data/Self_driving/SemanticSeg/Cityscapes/"
+  root: "C:/Users/aarus/Downloads/Cityscapes/Cityscapes/"
   train: "train.txt"
   test: "test.txt"
   val: "val.txt"
@@ -22,8 +23,8 @@ dataset:
 patch:
   size: 200
   #loc: "corner"
-  #loc: "random"
-  loc: "center"
+  loc: "random"
+  #loc: "center"
 
 
 ### 3.Optimizer

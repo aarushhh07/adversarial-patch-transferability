@@ -1,0 +1,571 @@
+ ****************************************************************************** 
+                  Experiments at 2025-06-16 13:18:20.386959
+ ****************************************************************************** 
+Hi, This is root.
+After the configurations are successfully processed and dirs are created.
+The pipeline of the project will begin now.
+------------- :: Config for this run :: -----------------
+----------------- experiment--------------------
+name:Experiments
+log_patch_address:C:/Users/aarus/everything_dsg/adversarial-patch-transferability/Experiments/
+device:cpu
+----------------- model--------------------
+name:pidnet_s
+pretrained:pretrained_models/PIDNet/PIDNet_S_Cityscapes_test.pt
+----------------- dataset--------------------
+name:cityscapes
+root:C:/Users/aarus/Downloads/archive.zip/Cityscapes
+train:train.txt
+test:test.txt
+val:val.txt
+trainval:trainval.txt
+num_classes:19
+----------------- patch--------------------
+size:200
+loc:random
+----------------- optimizer--------------------
+optimizer:sgd
+init_lr:0.005
+momentum:0.9
+weight_decay:0.0005
+nesterov:False
+exponentiallr:True
+exponentiallr_gamma:0.995
+----------------- loss--------------------
+use_ohem:True
+ohemthres:0.9
+ohemkeep:131072
+balance_weights:[0.4, 1.0]
+sb_weights:1.0
+----------------- train--------------------
+width:1024
+height:1024
+base_size:2048
+flip:True
+shuffle:True
+ignore_label:255
+num_workers:2
+pin_memory:True
+drop_last:False
+batch_size:1
+multi_scale:True
+scale_factor:16
+power:2.5
+log_per_iters:1
+start_epoch:0
+end_epoch:30
+----------------- test--------------------
+width:2048
+height:1024
+base_size:1024
+batch_size:1
+output_index_pidnet:1
+output_index_icnet:0
+output_index_bisenet:0
+num_workers:2
+pin_memory:True
+drop_last:False
+multi_scale:False
+flip_test:False
+
+ ****************************************************************************** 
+                  Experiments at 2025-06-16 13:19:10.204868
+ ****************************************************************************** 
+Hi, This is root.
+After the configurations are successfully processed and dirs are created.
+The pipeline of the project will begin now.
+------------- :: Config for this run :: -----------------
+----------------- experiment--------------------
+name:Experiments
+log_patch_address:C:/Users/aarus/everything_dsg/adversarial-patch-transferability/Experiments/
+device:cpu
+----------------- model--------------------
+name:pidnet_s
+pretrained:pretrained_models/PIDNet/PIDNet_S_Cityscapes_test.pt
+----------------- dataset--------------------
+name:cityscapes
+root:C:/Users/aarus/Downloads/archive.zip/Cityscapes/
+train:train.txt
+test:test.txt
+val:val.txt
+trainval:trainval.txt
+num_classes:19
+----------------- patch--------------------
+size:200
+loc:random
+----------------- optimizer--------------------
+optimizer:sgd
+init_lr:0.005
+momentum:0.9
+weight_decay:0.0005
+nesterov:False
+exponentiallr:True
+exponentiallr_gamma:0.995
+----------------- loss--------------------
+use_ohem:True
+ohemthres:0.9
+ohemkeep:131072
+balance_weights:[0.4, 1.0]
+sb_weights:1.0
+----------------- train--------------------
+width:1024
+height:1024
+base_size:2048
+flip:True
+shuffle:True
+ignore_label:255
+num_workers:2
+pin_memory:True
+drop_last:False
+batch_size:1
+multi_scale:True
+scale_factor:16
+power:2.5
+log_per_iters:1
+start_epoch:0
+end_epoch:30
+----------------- test--------------------
+width:2048
+height:1024
+base_size:1024
+batch_size:1
+output_index_pidnet:1
+output_index_icnet:0
+output_index_bisenet:0
+num_workers:2
+pin_memory:True
+drop_last:False
+multi_scale:False
+flip_test:False
+
+ ****************************************************************************** 
+                  Experiments at 2025-06-16 14:14:52.871286
+ ****************************************************************************** 
+Hi, This is root.
+After the configurations are successfully processed and dirs are created.
+The pipeline of the project will begin now.
+------------- :: Config for this run :: -----------------
+----------------- experiment--------------------
+name:Experiments
+log_patch_address:C:/Users/aarus/everything_dsg/adversarial-patch-transferability/Experiments/
+device:cpu
+----------------- model--------------------
+name:pidnet_s
+pretrained:pretrained_models/PIDNet/PIDNet_S_Cityscapes_test.pt
+----------------- dataset--------------------
+name:cityscapes
+root:C:/Users/aarus/Downloads/Cityscapes/Cityscapes
+train:train.txt
+test:test.txt
+val:val.txt
+trainval:trainval.txt
+num_classes:19
+----------------- patch--------------------
+size:200
+loc:random
+----------------- optimizer--------------------
+optimizer:sgd
+init_lr:0.005
+momentum:0.9
+weight_decay:0.0005
+nesterov:False
+exponentiallr:True
+exponentiallr_gamma:0.995
+----------------- loss--------------------
+use_ohem:True
+ohemthres:0.9
+ohemkeep:131072
+balance_weights:[0.4, 1.0]
+sb_weights:1.0
+----------------- train--------------------
+width:1024
+height:1024
+base_size:2048
+flip:True
+shuffle:True
+ignore_label:255
+num_workers:2
+pin_memory:True
+drop_last:False
+batch_size:1
+multi_scale:True
+scale_factor:16
+power:2.5
+log_per_iters:1
+start_epoch:0
+end_epoch:30
+----------------- test--------------------
+width:2048
+height:1024
+base_size:1024
+batch_size:1
+output_index_pidnet:1
+output_index_icnet:0
+output_index_bisenet:0
+num_workers:2
+pin_memory:True
+drop_last:False
+multi_scale:False
+flip_test:False
+
+ ****************************************************************************** 
+                  Experiments at 2025-06-16 14:15:12.520773
+ ****************************************************************************** 
+Hi, This is root.
+After the configurations are successfully processed and dirs are created.
+The pipeline of the project will begin now.
+------------- :: Config for this run :: -----------------
+----------------- experiment--------------------
+name:Experiments
+log_patch_address:C:/Users/aarus/everything_dsg/adversarial-patch-transferability/Experiments/
+device:cpu
+----------------- model--------------------
+name:pidnet_s
+pretrained:pretrained_models/PIDNet/PIDNet_S_Cityscapes_test.pt
+----------------- dataset--------------------
+name:cityscapes
+root:C:/Users/aarus/Downloads/Cityscapes/Cityscapes/
+train:train.txt
+test:test.txt
+val:val.txt
+trainval:trainval.txt
+num_classes:19
+----------------- patch--------------------
+size:200
+loc:random
+----------------- optimizer--------------------
+optimizer:sgd
+init_lr:0.005
+momentum:0.9
+weight_decay:0.0005
+nesterov:False
+exponentiallr:True
+exponentiallr_gamma:0.995
+----------------- loss--------------------
+use_ohem:True
+ohemthres:0.9
+ohemkeep:131072
+balance_weights:[0.4, 1.0]
+sb_weights:1.0
+----------------- train--------------------
+width:1024
+height:1024
+base_size:2048
+flip:True
+shuffle:True
+ignore_label:255
+num_workers:2
+pin_memory:True
+drop_last:False
+batch_size:1
+multi_scale:True
+scale_factor:16
+power:2.5
+log_per_iters:1
+start_epoch:0
+end_epoch:30
+----------------- test--------------------
+width:2048
+height:1024
+base_size:1024
+batch_size:1
+output_index_pidnet:1
+output_index_icnet:0
+output_index_bisenet:0
+num_workers:2
+pin_memory:True
+drop_last:False
+multi_scale:False
+flip_test:False
+
+Start training, Total Epochs: 30 = Iterations per epoch 2975
+ ****************************************************************************** 
+                  Experiments at 2025-06-16 14:27:10.182026
+ ****************************************************************************** 
+Hi, This is root.
+After the configurations are successfully processed and dirs are created.
+The pipeline of the project will begin now.
+------------- :: Config for this run :: -----------------
+----------------- experiment--------------------
+name:Experiments
+log_patch_address:C:/Users/aarus/everything_dsg/adversarial-patch-transferability/Experiments/
+device:cpu
+----------------- model--------------------
+name:pidnet_s
+pretrained:pretrained_models/PIDNet/PIDNet_S_Cityscapes_test.pt
+----------------- dataset--------------------
+name:cityscapes
+root:C:/Users/aarus/Downloads/Cityscapes/Cityscapes/
+train:train.txt
+test:test.txt
+val:val.txt
+trainval:trainval.txt
+num_classes:19
+----------------- patch--------------------
+size:200
+loc:random
+----------------- optimizer--------------------
+optimizer:sgd
+init_lr:0.005
+momentum:0.9
+weight_decay:0.0005
+nesterov:False
+exponentiallr:True
+exponentiallr_gamma:0.995
+----------------- loss--------------------
+use_ohem:True
+ohemthres:0.9
+ohemkeep:131072
+balance_weights:[0.4, 1.0]
+sb_weights:1.0
+----------------- train--------------------
+width:1024
+height:1024
+base_size:2048
+flip:True
+shuffle:True
+ignore_label:255
+num_workers:2
+pin_memory:True
+drop_last:False
+batch_size:1
+multi_scale:True
+scale_factor:16
+power:2.5
+log_per_iters:1
+start_epoch:0
+end_epoch:30
+----------------- test--------------------
+width:2048
+height:1024
+base_size:1024
+batch_size:1
+output_index_pidnet:1
+output_index_icnet:0
+output_index_bisenet:0
+num_workers:2
+pin_memory:True
+drop_last:False
+multi_scale:False
+flip_test:False
+
+Start training, Total Epochs: 30 = Iterations per epoch 2975
+Epochs: 0/30 || Samples: 1/2975 || Lr: 0.005000 || Loss: 0.0620 || mIoU: 0.4632 || Cost Time: 0:00:09 || Estimated Time: 9 days, 13:18:16
+Epochs: 0/30 || Samples: 2/2975 || Lr: 0.005000 || Loss: 0.0725 || mIoU: 0.4613 || Cost Time: 0:00:10 || Estimated Time: 5 days, 13:10:37
+Epochs: 0/30 || Samples: 3/2975 || Lr: 0.005000 || Loss: 0.1001 || mIoU: 0.5394 || Cost Time: 0:00:12 || Estimated Time: 4 days, 4:24:33
+Epochs: 0/30 || Samples: 4/2975 || Lr: 0.005000 || Loss: 0.0393 || mIoU: 0.5395 || Cost Time: 0:00:13 || Estimated Time: 3 days, 14:10:24
+Epochs: 0/30 || Samples: 5/2975 || Lr: 0.005000 || Loss: 0.0895 || mIoU: 0.5664 || Cost Time: 0:00:15 || Estimated Time: 3 days, 3:46:54
+Epochs: 0/30 || Samples: 6/2975 || Lr: 0.005000 || Loss: 0.0541 || mIoU: 0.5656 || Cost Time: 0:00:16 || Estimated Time: 2 days, 21:27:03
+Epochs: 0/30 || Samples: 7/2975 || Lr: 0.005000 || Loss: 0.0586 || mIoU: 0.5690 || Cost Time: 0:00:18 || Estimated Time: 2 days, 16:22:18
+Epochs: 0/30 || Samples: 8/2975 || Lr: 0.005000 || Loss: 0.0634 || mIoU: 0.5733 || Cost Time: 0:00:19 || Estimated Time: 2 days, 12:38:30
+Epochs: 0/30 || Samples: 9/2975 || Lr: 0.005000 || Loss: 0.0954 || mIoU: 0.6007 || Cost Time: 0:00:20 || Estimated Time: 2 days, 9:23:36
+Epochs: 0/30 || Samples: 10/2975 || Lr: 0.005000 || Loss: 0.0440 || mIoU: 0.5972 || Cost Time: 0:00:22 || Estimated Time: 2 days, 7:09:53
+Epochs: 0/30 || Samples: 11/2975 || Lr: 0.005000 || Loss: 0.1482 || mIoU: 0.5953 || Cost Time: 0:00:23 || Estimated Time: 2 days, 5:22:48
+Epochs: 0/30 || Samples: 12/2975 || Lr: 0.005000 || Loss: 0.0530 || mIoU: 0.5986 || Cost Time: 0:00:25 || Estimated Time: 2 days, 4:16:31
+Epochs: 0/30 || Samples: 13/2975 || Lr: 0.005000 || Loss: 0.0508 || mIoU: 0.6317 || Cost Time: 0:00:26 || Estimated Time: 2 days, 2:35:13
+Epochs: 0/30 || Samples: 14/2975 || Lr: 0.005000 || Loss: 0.0504 || mIoU: 0.6508 || Cost Time: 0:00:27 || Estimated Time: 2 days, 1:16:26
+Epochs: 0/30 || Samples: 15/2975 || Lr: 0.005000 || Loss: 0.0637 || mIoU: 0.6510 || Cost Time: 0:00:29 || Estimated Time: 2 days, 0:53:17
+Epochs: 0/30 || Samples: 16/2975 || Lr: 0.005000 || Loss: 0.0645 || mIoU: 0.6478 || Cost Time: 0:00:31 || Estimated Time: 2 days, 0:22:05
+Epochs: 0/30 || Samples: 17/2975 || Lr: 0.005000 || Loss: 0.0495 || mIoU: 0.6547 || Cost Time: 0:00:32 || Estimated Time: 1 day, 23:35:16
+Epochs: 0/30 || Samples: 18/2975 || Lr: 0.005000 || Loss: 0.0656 || mIoU: 0.6615 || Cost Time: 0:00:33 || Estimated Time: 1 day, 22:36:33
+Epochs: 0/30 || Samples: 19/2975 || Lr: 0.005000 || Loss: 0.0524 || mIoU: 0.6636 || Cost Time: 0:00:35 || Estimated Time: 1 day, 22:17:48
+Epochs: 0/30 || Samples: 20/2975 || Lr: 0.005000 || Loss: 0.0731 || mIoU: 0.6570 || Cost Time: 0:00:36 || Estimated Time: 1 day, 21:35:04
+Epochs: 0/30 || Samples: 21/2975 || Lr: 0.005000 || Loss: 0.0642 || mIoU: 0.6579 || Cost Time: 0:00:38 || Estimated Time: 1 day, 21:21:50
+Epochs: 0/30 || Samples: 22/2975 || Lr: 0.005000 || Loss: 0.0652 || mIoU: 0.6567 || Cost Time: 0:00:39 || Estimated Time: 1 day, 20:51:53
+Epochs: 0/30 || Samples: 23/2975 || Lr: 0.005000 || Loss: 0.0856 || mIoU: 0.6643 || Cost Time: 0:00:41 || Estimated Time: 1 day, 20:42:17
+Epochs: 0/30 || Samples: 24/2975 || Lr: 0.005000 || Loss: 0.0554 || mIoU: 0.6977 || Cost Time: 0:00:42 || Estimated Time: 1 day, 20:11:24
+Epochs: 0/30 || Samples: 25/2975 || Lr: 0.005000 || Loss: 0.0515 || mIoU: 0.6971 || Cost Time: 0:00:44 || Estimated Time: 1 day, 20:00:08
+Epochs: 0/30 || Samples: 26/2975 || Lr: 0.005000 || Loss: 0.0509 || mIoU: 0.6997 || Cost Time: 0:00:45 || Estimated Time: 1 day, 19:46:59
+Epochs: 0/30 || Samples: 27/2975 || Lr: 0.005000 || Loss: 0.0569 || mIoU: 0.6988 || Cost Time: 0:00:47 || Estimated Time: 1 day, 19:24:49
+ ****************************************************************************** 
+                  Experiments at 2025-06-17 10:51:20.957350
+ ****************************************************************************** 
+Hi, This is root.
+After the configurations are successfully processed and dirs are created.
+The pipeline of the project will begin now.
+------------- :: Config for this run :: -----------------
+----------------- experiment--------------------
+name:Experiments
+log_patch_address:C:/Users/aarus/everything_dsg/adversarial-patch-transferability/Experiments/
+device:cpu
+----------------- model--------------------
+name:pidnet_s
+pretrained:pretrained_models/PIDNet/PIDNet_S_Cityscapes_test.pt
+----------------- dataset--------------------
+name:cityscapes
+root:C:/Users/aarus/Downloads/Cityscapes/Cityscapes/
+train:train.txt
+test:test.txt
+val:val.txt
+trainval:trainval.txt
+num_classes:19
+----------------- patch--------------------
+size:200
+loc:random
+----------------- optimizer--------------------
+optimizer:sgd
+init_lr:0.005
+momentum:0.9
+weight_decay:0.0005
+nesterov:False
+exponentiallr:True
+exponentiallr_gamma:0.995
+----------------- loss--------------------
+use_ohem:True
+ohemthres:0.9
+ohemkeep:131072
+balance_weights:[0.4, 1.0]
+sb_weights:1.0
+----------------- train--------------------
+width:1024
+height:1024
+base_size:2048
+flip:True
+shuffle:True
+ignore_label:255
+num_workers:2
+pin_memory:True
+drop_last:False
+batch_size:1
+multi_scale:True
+scale_factor:16
+power:2.5
+log_per_iters:1
+start_epoch:0
+end_epoch:30
+----------------- test--------------------
+width:2048
+height:1024
+base_size:1024
+batch_size:1
+output_index_pidnet:1
+output_index_icnet:0
+output_index_bisenet:0
+num_workers:2
+pin_memory:True
+drop_last:False
+multi_scale:False
+flip_test:False
+
+Start training, Total Epochs: 30 = Iterations per epoch 2975
+Epochs: 0/30 || Samples: 1/2975 || Lr: 0.005000 || Loss: 0.0784 || mIoU: 0.2889 || Cost Time: 0:00:05 || Estimated Time: 6 days, 2:15:03
+Epochs: 0/30 || Samples: 2/2975 || Lr: 0.005000 || Loss: 0.0737 || mIoU: 0.4688 || Cost Time: 0:00:06 || Estimated Time: 3 days, 12:27:27
+Epochs: 0/30 || Samples: 3/2975 || Lr: 0.005000 || Loss: 0.1050 || mIoU: 0.4776 || Cost Time: 0:00:07 || Estimated Time: 2 days, 15:53:02
+Epochs: 0/30 || Samples: 4/2975 || Lr: 0.005000 || Loss: 0.0681 || mIoU: 0.5191 || Cost Time: 0:00:08 || Estimated Time: 2 days, 5:32:00
+Epochs: 0/30 || Samples: 5/2975 || Lr: 0.005000 || Loss: 0.0483 || mIoU: 0.5211 || Cost Time: 0:00:09 || Estimated Time: 1 day, 23:22:40
+Epochs: 0/30 || Samples: 6/2975 || Lr: 0.005000 || Loss: 0.0558 || mIoU: 0.5250 || Cost Time: 0:00:10 || Estimated Time: 1 day, 20:03:28
+Epochs: 0/30 || Samples: 7/2975 || Lr: 0.005000 || Loss: 0.0697 || mIoU: 0.5878 || Cost Time: 0:00:11 || Estimated Time: 1 day, 17:09:44
+Epochs: 0/30 || Samples: 8/2975 || Lr: 0.005000 || Loss: 0.0806 || mIoU: 0.6387 || Cost Time: 0:00:12 || Estimated Time: 1 day, 15:01:14
+Epochs: 0/30 || Samples: 9/2975 || Lr: 0.005000 || Loss: 0.0620 || mIoU: 0.6513 || Cost Time: 0:00:13 || Estimated Time: 1 day, 13:26:45
+Epochs: 0/30 || Samples: 10/2975 || Lr: 0.005000 || Loss: 0.0475 || mIoU: 0.6532 || Cost Time: 0:00:15 || Estimated Time: 1 day, 13:14:08
+Epochs: 0/30 || Samples: 11/2975 || Lr: 0.005000 || Loss: 0.0433 || mIoU: 0.6521 || Cost Time: 0:00:16 || Estimated Time: 1 day, 12:17:13
+Epochs: 0/30 || Samples: 12/2975 || Lr: 0.005000 || Loss: 0.0928 || mIoU: 0.6638 || Cost Time: 0:00:17 || Estimated Time: 1 day, 11:38:38
+Epochs: 0/30 || Samples: 13/2975 || Lr: 0.005000 || Loss: 0.0678 || mIoU: 0.6634 || Cost Time: 0:00:18 || Estimated Time: 1 day, 11:26:25
+Epochs: 0/30 || Samples: 14/2975 || Lr: 0.005000 || Loss: 0.0553 || mIoU: 0.6650 || Cost Time: 0:00:20 || Estimated Time: 1 day, 11:42:04
+Epochs: 0/30 || Samples: 15/2975 || Lr: 0.005000 || Loss: 0.0564 || mIoU: 0.6667 || Cost Time: 0:00:21 || Estimated Time: 1 day, 11:49:40
+Epochs: 0/30 || Samples: 16/2975 || Lr: 0.005000 || Loss: 0.0498 || mIoU: 0.6688 || Cost Time: 0:00:23 || Estimated Time: 1 day, 11:54:30
+Epochs: 0/30 || Samples: 17/2975 || Lr: 0.005000 || Loss: 0.0610 || mIoU: 0.6719 || Cost Time: 0:00:24 || Estimated Time: 1 day, 12:08:41
+Epochs: 0/30 || Samples: 18/2975 || Lr: 0.005000 || Loss: 0.0591 || mIoU: 0.7123 || Cost Time: 0:00:26 || Estimated Time: 1 day, 11:53:34
+Epochs: 0/30 || Samples: 19/2975 || Lr: 0.005000 || Loss: 0.0767 || mIoU: 0.7166 || Cost Time: 0:00:27 || Estimated Time: 1 day, 11:37:18
+Epochs: 0/30 || Samples: 20/2975 || Lr: 0.005000 || Loss: 0.0560 || mIoU: 0.7194 || Cost Time: 0:00:28 || Estimated Time: 1 day, 11:34:05
+Epochs: 0/30 || Samples: 21/2975 || Lr: 0.005000 || Loss: 0.0610 || mIoU: 0.7142 || Cost Time: 0:00:30 || Estimated Time: 1 day, 11:46:51
+Epochs: 0/30 || Samples: 22/2975 || Lr: 0.005000 || Loss: 0.0800 || mIoU: 0.7170 || Cost Time: 0:00:31 || Estimated Time: 1 day, 11:28:43
+Epochs: 0/30 || Samples: 23/2975 || Lr: 0.005000 || Loss: 0.0868 || mIoU: 0.7184 || Cost Time: 0:00:32 || Estimated Time: 1 day, 11:20:12
+Epochs: 0/30 || Samples: 24/2975 || Lr: 0.005000 || Loss: 0.0728 || mIoU: 0.7319 || Cost Time: 0:00:34 || Estimated Time: 1 day, 11:22:23
+Epochs: 0/30 || Samples: 25/2975 || Lr: 0.005000 || Loss: 0.0439 || mIoU: 0.7324 || Cost Time: 0:00:35 || Estimated Time: 1 day, 11:20:06
+Epochs: 0/30 || Samples: 26/2975 || Lr: 0.005000 || Loss: 0.0594 || mIoU: 0.7359 || Cost Time: 0:00:36 || Estimated Time: 1 day, 11:08:11
+Epochs: 0/30 || Samples: 27/2975 || Lr: 0.005000 || Loss: 0.0596 || mIoU: 0.7515 || Cost Time: 0:00:38 || Estimated Time: 1 day, 10:58:01
+Epochs: 0/30 || Samples: 28/2975 || Lr: 0.005000 || Loss: 0.0573 || mIoU: 0.7531 || Cost Time: 0:00:39 || Estimated Time: 1 day, 10:53:59
+Epochs: 0/30 || Samples: 29/2975 || Lr: 0.005000 || Loss: 0.0661 || mIoU: 0.7510 || Cost Time: 0:00:41 || Estimated Time: 1 day, 11:08:11
+Epochs: 0/30 || Samples: 30/2975 || Lr: 0.005000 || Loss: 0.0735 || mIoU: 0.7487 || Cost Time: 0:00:42 || Estimated Time: 1 day, 11:14:02
+Epochs: 0/30 || Samples: 31/2975 || Lr: 0.005000 || Loss: 0.1348 || mIoU: 0.7412 || Cost Time: 0:00:43 || Estimated Time: 1 day, 11:08:52
+Epochs: 0/30 || Samples: 32/2975 || Lr: 0.005000 || Loss: 0.0637 || mIoU: 0.7434 || Cost Time: 0:00:45 || Estimated Time: 1 day, 11:02:46
+Epochs: 0/30 || Samples: 33/2975 || Lr: 0.005000 || Loss: 0.0343 || mIoU: 0.7436 || Cost Time: 0:00:47 || Estimated Time: 1 day, 11:31:36
+Epochs: 0/30 || Samples: 34/2975 || Lr: 0.005000 || Loss: 0.0469 || mIoU: 0.7444 || Cost Time: 0:00:50 || Estimated Time: 1 day, 12:40:58
+Epochs: 0/30 || Samples: 35/2975 || Lr: 0.005000 || Loss: 0.0639 || mIoU: 0.7439 || Cost Time: 0:00:53 || Estimated Time: 1 day, 13:39:09
+Epochs: 0/30 || Samples: 36/2975 || Lr: 0.005000 || Loss: 0.0824 || mIoU: 0.7420 || Cost Time: 0:00:55 || Estimated Time: 1 day, 14:16:15
+Epochs: 0/30 || Samples: 37/2975 || Lr: 0.005000 || Loss: 0.0492 || mIoU: 0.7955 || Cost Time: 0:00:58 || Estimated Time: 1 day, 14:55:18
+Epochs: 0/30 || Samples: 38/2975 || Lr: 0.005000 || Loss: 0.0729 || mIoU: 0.7961 || Cost Time: 0:00:59 || Estimated Time: 1 day, 14:49:06
+Epochs: 0/30 || Samples: 39/2975 || Lr: 0.005000 || Loss: 0.0598 || mIoU: 0.7961 || Cost Time: 0:01:01 || Estimated Time: 1 day, 14:47:14
+Epochs: 0/30 || Samples: 40/2975 || Lr: 0.005000 || Loss: 0.0442 || mIoU: 0.7962 || Cost Time: 0:01:02 || Estimated Time: 1 day, 14:32:00
+ ****************************************************************************** 
+                  Experiments at 2025-06-17 12:55:59.387437
+ ****************************************************************************** 
+Hi, This is root.
+After the configurations are successfully processed and dirs are created.
+The pipeline of the project will begin now.
+------------- :: Config for this run :: -----------------
+----------------- experiment--------------------
+name:Experiments
+log_patch_address:C:/Users/aarus/everything_dsg/adversarial-patch-transferability/Experiments/
+device:cpu
+----------------- model--------------------
+name:pidnet_s
+pretrained:pretrained_models/PIDNet/PIDNet_S_Cityscapes_test.pt
+----------------- dataset--------------------
+name:cityscapes
+root:C:/Users/aarus/Downloads/Cityscapes/Cityscapes/
+train:train.txt
+test:test.txt
+val:val.txt
+trainval:trainval.txt
+num_classes:19
+----------------- patch--------------------
+size:200
+loc:random
+----------------- optimizer--------------------
+optimizer:sgd
+init_lr:0.005
+momentum:0.9
+weight_decay:0.0005
+nesterov:False
+exponentiallr:True
+exponentiallr_gamma:0.995
+----------------- loss--------------------
+use_ohem:True
+ohemthres:0.9
+ohemkeep:131072
+balance_weights:[0.4, 1.0]
+sb_weights:1.0
+----------------- train--------------------
+width:1024
+height:1024
+base_size:2048
+flip:True
+shuffle:True
+ignore_label:255
+num_workers:2
+pin_memory:True
+drop_last:False
+batch_size:1
+multi_scale:True
+scale_factor:16
+power:2.5
+log_per_iters:1
+start_epoch:0
+end_epoch:30
+----------------- test--------------------
+width:2048
+height:1024
+base_size:1024
+batch_size:1
+output_index_pidnet:1
+output_index_icnet:0
+output_index_bisenet:0
+num_workers:2
+pin_memory:True
+drop_last:False
+multi_scale:False
+flip_test:False
+
+Start training, Total Epochs: 30 = Iterations per epoch 2975
+Epochs: 0/30 || Samples: 1/2975 || Lr: 0.005000 || Loss: 0.0867 || mIoU: 0.3537 || Cost Time: 0:00:05 || Estimated Time: 6 days, 1:05:11
+Epochs: 0/30 || Samples: 2/2975 || Lr: 0.005000 || Loss: 0.0727 || mIoU: 0.5400 || Cost Time: 0:00:06 || Estimated Time: 3 days, 12:59:38
+Epochs: 0/30 || Samples: 3/2975 || Lr: 0.005000 || Loss: 0.0706 || mIoU: 0.5854 || Cost Time: 0:00:07 || Estimated Time: 2 days, 15:58:39
+Epochs: 0/30 || Samples: 4/2975 || Lr: 0.005000 || Loss: 0.0519 || mIoU: 0.5788 || Cost Time: 0:00:08 || Estimated Time: 2 days, 4:54:19
+Epochs: 0/30 || Samples: 5/2975 || Lr: 0.005000 || Loss: 0.0650 || mIoU: 0.5812 || Cost Time: 0:00:09 || Estimated Time: 1 day, 23:12:55
+Epochs: 0/30 || Samples: 6/2975 || Lr: 0.005000 || Loss: 0.0734 || mIoU: 0.6004 || Cost Time: 0:00:10 || Estimated Time: 1 day, 21:08:11
+Epochs: 0/30 || Samples: 7/2975 || Lr: 0.005000 || Loss: 0.0734 || mIoU: 0.6289 || Cost Time: 0:00:11 || Estimated Time: 1 day, 17:39:58
+Epochs: 0/30 || Samples: 8/2975 || Lr: 0.005000 || Loss: 0.0630 || mIoU: 0.6310 || Cost Time: 0:00:12 || Estimated Time: 1 day, 15:13:29
+Epochs: 0/30 || Samples: 9/2975 || Lr: 0.005000 || Loss: 0.0613 || mIoU: 0.6250 || Cost Time: 0:00:13 || Estimated Time: 1 day, 13:52:46
+Epochs: 0/30 || Samples: 10/2975 || Lr: 0.005000 || Loss: 0.0600 || mIoU: 0.6262 || Cost Time: 0:00:14 || Estimated Time: 1 day, 12:15:28

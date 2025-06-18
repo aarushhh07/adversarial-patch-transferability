@@ -8,7 +8,7 @@ import cv2
 import numpy as np
 from PIL import Image
 import sys
-sys.path.append('/content/drive/MyDrive/Colab Notebooks/1_Papers/3_Attack_generation')
+sys.path.append(r"c:\Users\aarus\everything_dsg\adversarial-patch-transferability")
 
 import torch
 from dataset.base_dataset import BaseDataset
@@ -96,8 +96,7 @@ class Cityscapes(BaseDataset):
     def __getitem__(self, index):
         item = self.files[index]
         name = item["name"]
-        image = cv2.imread(os.path.join(self.root,'cityscapes',item["img"]),
-                           cv2.IMREAD_COLOR)
+        image = cv2.imread(os.path.join(self.root, item["img"]), cv2.IMREAD_COLOR)
         size = image.shape
 
         if 'test' in self.list_path:
@@ -106,8 +105,7 @@ class Cityscapes(BaseDataset):
 
             return image.copy(), np.array(size), name
 
-        label = cv2.imread(os.path.join(self.root,'cityscapes',item["label"]),
-                           cv2.IMREAD_GRAYSCALE)
+        label = cv2.imread(os.path.join(self.root, item["label"]), cv2.IMREAD_GRAYSCALE)
         label = self.convert_label(label)
 
         image, label, edge = self.gen_sample(image, label, 
